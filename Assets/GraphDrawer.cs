@@ -67,7 +67,7 @@ public class GraphDrawer : MonoBehaviour
         // Iterates through all nodes and draw from prefab.
         foreach(Node node in nodes)
         {
-            var n = Instantiate(ball, new Vector3(node.getXyz()[0], node.getXyz()[1], node.getXyz()[2]), Quaternion.identity);
+            var n = Instantiate(ball, new Vector3(node.getXyz()[0] * 10, node.getXyz()[1] * 10, node.getXyz()[2] * 10), Quaternion.identity);
             n.GetComponent<Renderer>().material.color = new Color(node.getRgb()[0]/255, node.getRgb()[1]/255, node.getRgb()[2]/255, 1.0f);
             n.transform.localScale = new Vector3(node.getSize(), node.getSize(), node.getSize());
 
@@ -92,7 +92,7 @@ public class GraphDrawer : MonoBehaviour
         {
             GameObject newLineGenerator = Instantiate(lineGenerator);
             LineRenderer lineRenderer = newLineGenerator.GetComponent<LineRenderer>();
-            lineRenderer.SetWidth(0.1f, 0.1f);
+            lineRenderer.SetWidth(0.001f, 0.001f);
             lineRenderer.SetPosition(0, edge.sourceNode.position);
             lineRenderer.SetPosition(1, edge.destinationNode.position);
         }
