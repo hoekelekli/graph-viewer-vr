@@ -8,8 +8,8 @@ public class Edge
     private string destinationId;
     private float weight;
 
-    public Transform sourceNode;
-    public Transform destinationNode;
+    public GameObject sourceNode;
+    public GameObject destinationNode;
 
     public Edge(string sourceId, string destinationId, float weight)
     {
