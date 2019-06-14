@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.29629105, g: 0.24454755, b: 0.22886425, a: 1}
+  m_IndirectSpecularColor: {r: 0.29596823, g: 0.24581721, b: 0.2310952, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -271,7 +271,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 5.730171e-39, y: 5.795901e+22, z: 1.1865871e+27, w: 2.7073573e+23}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -416,7 +416,7 @@ MonoBehaviour:
     type: 3}
   nodeText: {fileID: 6266140426130566876, guid: caec838e3bb08a946b972ddeb0257c77,
     type: 3}
-  arrowHead: {fileID: -927199367670048503, guid: 7c6386c2f715a4d49a32957e42e290ae,
+  arrowHead: {fileID: 5024187007093369587, guid: 09f7d1ba5f774f940b4f5d34153f71a1,
     type: 3}
   inputFile: Assets/Resources/gephi_ex_01.graphml
 --- !u!4 &2080159607
