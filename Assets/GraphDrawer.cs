@@ -107,6 +107,7 @@ public class GraphDrawer : MonoBehaviour
             // add arrowhead
             var arrow = Instantiate(arrowHead, edge.destinationNode.GetComponent<SphereCollider>().ClosestPoint(edge.sourceNode.transform.position), 
                              Quaternion.FromToRotation(edge.sourceNode.transform.position, edge.destinationNode.transform.position));
+                             // current state: Arrows are not completely correct!
             arrow.transform.localScale = new Vector3(150, 150, 150);
         }
     }
