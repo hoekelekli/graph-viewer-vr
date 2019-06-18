@@ -7,7 +7,7 @@ MonoImporter:
   - ball: {instanceID: 0}
   - lineGenerator: {instanceID: 0}
   - nodeLabel: {instanceID: 0}
-  executionOrder: 0
+  executionOrder: 100
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
