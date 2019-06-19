@@ -14,15 +14,19 @@ public class GraphDrawer : MonoBehaviour
     public GameObject lineGenerator;
     public GameObject nodeText;
     public GameObject arrowHead;
+    public string inputFile;
     
-    private string inputFile = "Assets/Resources/gephi_ex_02.graphml";
     private List<Edge> edges = new List<Edge>();
     private List<Node> nodes = new List<Node>();
+
+    void Awake()
+    {
+        parseXML();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        parseXML();
         drawNodes();
         drawEdges();
     }
@@ -30,8 +34,9 @@ public class GraphDrawer : MonoBehaviour
     private void parseXML()
     {
         // parse inputFile and save nodes and vertices.
+        TextAsset t = Resources.Load(inputFile) as TextAsset;
         XmlDocument doc = new XmlDocument();
-        doc.Load(inputFile);
+        doc.LoadXml(t.text);
 
         foreach (XmlNode xmlNode in doc.DocumentElement)
         {   
@@ -115,12 +120,12 @@ public class GraphDrawer : MonoBehaviour
 
     private void drawEdges()
     {
-        foreach(Edge edge in edges)
+        foreach (Edge edge in edges)
         {
             GameObject newLineGenerator = Instantiate(lineGenerator);
             LineRenderer lineRenderer = newLineGenerator.GetComponent<LineRenderer>();
-            lineRenderer.startWidth = 0.001f;
-            lineRenderer.endWidth = 0.001f;
+            lineRenderer.startWidth = (float)1 / nodes.Count;
+            lineRenderer.endWidth = (float)1 / nodes.Count;
             lineRenderer.SetPosition(0, edge.sourceNode.transform.position);
             lineRenderer.SetPosition(1, edge.destinationNode.transform.position);
             lineRenderer.startColor = Color.white;

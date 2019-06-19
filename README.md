@@ -10,10 +10,13 @@ change the public variable inputFile in GraphDrawer class manually.
 # How to get graphml files
 Use gephi version 8.2 with the Atlas 3D plugin to generate the graphml files. We make 
 use of gephi because it makes the math for us. 
+Important: You need to change the file extension to .xml because the Unity TextAsset 
+is not compatible with graphml files.
 
-# Contribute to this project
-All kinds of contributions are welcomed. See Contribute.md for more details.
-For debugging setup see https://bertt.wordpress.com/2018/06/12/how-to-debug-your-unity3d-android-application-in-visual-studio/
+# How to change the logo
+Add your logo to the Assets/Standard Assets/2D/Sprites/ directory. Select your logo 
+in Unity. In the Inspector select "Sprite (2D and UI)" as Texture Type. 
+Select the LogoHolder->Logo in the Hirarchy and change the Source Image in the Inspector.
 
 # Screenshots
 ![screenshot](/Images/screenshot_01.png?raw=true "screenshot 1")
