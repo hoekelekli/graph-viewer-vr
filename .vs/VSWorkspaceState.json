@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Assets",
-    "\\Assets\\Standard Assets",
-    "\\Assets\\Standard Assets\\Characters",
-    "\\Assets\\Standard Assets\\Characters\\FirstPersonCharacter",
-    "\\Assets\\Standard Assets\\Characters\\FirstPersonCharacter\\Scripts"
+    "\\Assets"
   ],
-  "SelectedNode": "\\Assets\\Standard Assets\\Characters\\FirstPersonCharacter\\Scripts\\FirstPersonController.cs",
+  "SelectedNode": "\\Assets\\Node.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -20,3 +20,7 @@ Select the LogoHolder->Logo in the Hirarchy and change the Source Image in the I
 
 # Screenshots
 ![screenshot](/Images/screenshot_01.png?raw=true "screenshot 1")
+
+# Useful References
+https://forum.unity.com/threads/utopia-360-bluetooth-controller-mapping-buttons-to-unity.482773/
+

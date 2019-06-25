@@ -8,6 +8,7 @@ public class Node
     private float size;
     private float[] rgb;
     private float[] xyz;
+    private TextMesh label;
 
     public Node(string id, float size, float[] rgb, float[] xyz) 
     {
@@ -37,6 +38,11 @@ public class Node
         return size;
     }
 
+    public TextMesh getLabel()
+    {
+        return label;
+    }
+
     public void setId(string id)
     {
         this.id = id;
@@ -50,5 +56,10 @@ public class Node
     public void setRgb(float[] rgb)
     {
         this.rgb = rgb;
+    }
+
+    public void setLabel(TextMesh label)
+    {
+        this.label = label;
     }
 }

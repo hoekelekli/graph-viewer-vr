@@ -14,6 +14,7 @@ public class GraphDrawer : MonoBehaviour
     public GameObject lineGenerator;
     public GameObject nodeText;
     public GameObject arrowHead;
+    public GameObject player;
     public string inputFile;
     
     private List<Edge> edges = new List<Edge>();
@@ -29,6 +30,15 @@ public class GraphDrawer : MonoBehaviour
     {
         drawNodes();
         drawEdges();
+    }
+
+    void Update()
+    {
+        foreach(Node node in nodes)
+        {
+            Vector3 pos = 2 * node.getLabel().transform.position - player.transform.position;
+            node.getLabel().transform.LookAt(pos);    
+        }
     }
 
     private void parseXML()
@@ -96,11 +106,15 @@ public class GraphDrawer : MonoBehaviour
             n.GetComponent<Renderer>().material.color = new Color(red, green, blue, 1.0f);
             n.transform.localScale = new Vector3(size, size, size);
 
+            // set collider size
+            n.GetComponent<SphereCollider>().radius = node.getSize() * 0.5f;
+
             var m = Instantiate(nodeText, n.transform.position, Quaternion.identity);
             TextMesh mesh = m.GetComponent<TextMesh>();
             mesh.text = node.getId();
             mesh.transform.localScale = n.transform.localScale / 5;
             mesh.fontSize = 20;
+            node.setLabel(mesh);
             
             // set source and destination ids
             foreach(Edge edge in edges)
@@ -122,20 +136,26 @@ public class GraphDrawer : MonoBehaviour
     {
         foreach (Edge edge in edges)
         {
+            float lineScale = (float)2 / nodes.Count;
+            float arrowScale = Math.Min((float)50 / nodes.Count, 2.0f);
+
             GameObject newLineGenerator = Instantiate(lineGenerator);
             LineRenderer lineRenderer = newLineGenerator.GetComponent<LineRenderer>();
-            lineRenderer.startWidth = (float)1 / nodes.Count;
-            lineRenderer.endWidth = (float)1 / nodes.Count;
+            lineRenderer.startWidth = lineScale;
+            lineRenderer.endWidth = lineScale;
             lineRenderer.SetPosition(0, edge.sourceNode.transform.position);
             lineRenderer.SetPosition(1, edge.destinationNode.transform.position);
             lineRenderer.startColor = Color.white;
             lineRenderer.endColor = Color.white;
 
-            // add arrowhead
-            // var arrow = Instantiate(arrowHead, 
-            //             edge.destinationNode.GetComponent<SphereCollider>().ClosestPoint(edge.sourceNode.transform.position), 
-            //             Quaternion.LookRotation(edge.destinationNode.transform.position - edge.sourceNode.transform.position));
-            // arrow.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            /*
+            Todo: add arrowheads later
+            vector3 nodeposition = edge.sourcenode.transform.position;
+            vector3 headposition = edge.destinationnode.getcomponent<spherecollider>().closestpointonbounds(nodeposition);
+            vector3 directionvector = edge.destinationnode.transform.position - edge.sourcenode.transform.position;
+            var arrow = instantiate(arrowhead, headposition, quaternion.lookrotation(directionvector));
+            arrow.transform.localscale = new vector3(arrowscale, arrowscale, arrowscale);
+            */
         }
     }
 }
