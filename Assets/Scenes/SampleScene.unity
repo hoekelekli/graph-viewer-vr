@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 40919616}
   - component: {fileID: 40919615}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: LogoWatermark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -389,7 +389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &963194226
 AudioListener:
   m_ObjectHideFlags: 0
