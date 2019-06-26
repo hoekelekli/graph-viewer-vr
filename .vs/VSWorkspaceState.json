@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Assets"
+    "\\Assets",
+    "\\Assets\\Scripts"
   ],
-  "SelectedNode": "\\Assets\\Node.cs",
+  "SelectedNode": "\\Assets\\Scripts\\Node.cs",
   "PreviewInSolutionExplorer": false
 }

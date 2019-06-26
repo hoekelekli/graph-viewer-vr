@@ -27,7 +27,13 @@ public class GraphDrawer : MonoBehaviour
     /// This constant is multiplied with the coordinates of the nodes.
     /// </summary>
     public static readonly float CoordinateScale = 10f;
-    
+
+    /// <summary>
+    /// This variable is calculated using the amount of nodes and scales the width of
+    /// the edges.
+    /// </summary>
+    /// See definition in <see cref="GraphDrawer.DrawEdges"/>
+    public float LineScale;    
 
     /**
      * <summary>Parses the graph before the game starts.</summary>
@@ -113,12 +119,12 @@ public class GraphDrawer : MonoBehaviour
     {
         foreach (Edge edge in graph.edges)
         {
-            float lineScale = (float)2 / graph.nodes.Count;
+            LineScale = (float)2 / graph.nodes.Count;
 
             GameObject newLineGenerator = Instantiate(lineGenerator);
             LineRenderer lineRenderer = newLineGenerator.GetComponent<LineRenderer>();
-            lineRenderer.startWidth = lineScale; // multiply with edge.weight
-            lineRenderer.endWidth = lineScale; // multiply with edge.weight
+            lineRenderer.startWidth = LineScale; // multiply with edge.weight
+            lineRenderer.endWidth = LineScale; // multiply with edge.weight
             lineRenderer.SetPosition(0, edge.sourceNode.transform.position);
             lineRenderer.SetPosition(1, edge.destinationNode.transform.position);
             lineRenderer.startColor = Color.white;

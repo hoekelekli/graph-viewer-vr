@@ -1,0 +1,103 @@
+\hypertarget{class_graph_drawer}{}\section{Graph\+Drawer Class Reference}
+\label{class_graph_drawer}\index{GraphDrawer@{GraphDrawer}}
+Inheritance diagram for Graph\+Drawer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_graph_drawer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_graph_drawer_a3aabb356d594c77af566191bc7869eff}{Draw\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Iterates through all nodes and plots them into 3D world space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_drawer_ad4bde4b9d817629c77bc1e8818e5cd69}{Draw\+Edges}} ()
+\begin{DoxyCompactList}\small\item\em Iterates through all edges and connects source and target nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graph_drawer_a8126f350e34da05796424c5794935b31}\label{class_graph_drawer_a8126f350e34da05796424c5794935b31}} 
+Game\+Object {\bfseries ball}
+\item 
+\mbox{\Hypertarget{class_graph_drawer_a50b22b89dca27e868e269266de9aa2a3}\label{class_graph_drawer_a50b22b89dca27e868e269266de9aa2a3}} 
+Game\+Object {\bfseries line\+Generator}
+\item 
+\mbox{\Hypertarget{class_graph_drawer_ab66ad8d286ed137049bf07ef1d3c6f45}\label{class_graph_drawer_ab66ad8d286ed137049bf07ef1d3c6f45}} 
+Game\+Object {\bfseries node\+Text}
+\item 
+\mbox{\Hypertarget{class_graph_drawer_aee24df4051f8ef70b77f9fe680a3f5b9}\label{class_graph_drawer_aee24df4051f8ef70b77f9fe680a3f5b9}} 
+Game\+Object {\bfseries arrow\+Head}
+\item 
+\mbox{\Hypertarget{class_graph_drawer_a271926d8a025465e75950519199a8fa7}\label{class_graph_drawer_a271926d8a025465e75950519199a8fa7}} 
+Game\+Object {\bfseries player}
+\item 
+string \mbox{\hyperlink{class_graph_drawer_a1264583a4ab9461d51c53c78ca12c5fa}{input\+File}}
+\begin{DoxyCompactList}\small\item\em This variable can be changed within the Unity G\+UI. Keep in mind, that the extension has to be.\+xml and the extension.\+graphml is not supported. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_graph_drawer_aa5ef4a330d302c0d55a33376a4727edf}{Line\+Scale}}
+\begin{DoxyCompactList}\small\item\em This variable is calculated using the amount of nodes and scales the width of the edges. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly float \mbox{\hyperlink{class_graph_drawer_a8e26c2305c588cd202dce84292b7cd14}{Coordinate\+Scale}} = 10f
+\begin{DoxyCompactList}\small\item\em This constant is multiplied with the coordinates of the nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_drawer_ad4bde4b9d817629c77bc1e8818e5cd69}\label{class_graph_drawer_ad4bde4b9d817629c77bc1e8818e5cd69}} 
+\index{GraphDrawer@{GraphDrawer}!DrawEdges@{DrawEdges}}
+\index{DrawEdges@{DrawEdges}!GraphDrawer@{GraphDrawer}}
+\subsubsection{\texorpdfstring{DrawEdges()}{DrawEdges()}}
+{\footnotesize\ttfamily void Graph\+Drawer.\+Draw\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates through all edges and connects source and target nodes. 
+
+\mbox{\Hypertarget{class_graph_drawer_a3aabb356d594c77af566191bc7869eff}\label{class_graph_drawer_a3aabb356d594c77af566191bc7869eff}} 
+\index{GraphDrawer@{GraphDrawer}!DrawNodes@{DrawNodes}}
+\index{DrawNodes@{DrawNodes}!GraphDrawer@{GraphDrawer}}
+\subsubsection{\texorpdfstring{DrawNodes()}{DrawNodes()}}
+{\footnotesize\ttfamily void Graph\+Drawer.\+Draw\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates through all nodes and plots them into 3D world space. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graph_drawer_a8e26c2305c588cd202dce84292b7cd14}\label{class_graph_drawer_a8e26c2305c588cd202dce84292b7cd14}} 
+\index{GraphDrawer@{GraphDrawer}!CoordinateScale@{CoordinateScale}}
+\index{CoordinateScale@{CoordinateScale}!GraphDrawer@{GraphDrawer}}
+\subsubsection{\texorpdfstring{CoordinateScale}{CoordinateScale}}
+{\footnotesize\ttfamily readonly float Graph\+Drawer.\+Coordinate\+Scale = 10f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This constant is multiplied with the coordinates of the nodes. 
+
+\mbox{\Hypertarget{class_graph_drawer_a1264583a4ab9461d51c53c78ca12c5fa}\label{class_graph_drawer_a1264583a4ab9461d51c53c78ca12c5fa}} 
+\index{GraphDrawer@{GraphDrawer}!inputFile@{inputFile}}
+\index{inputFile@{inputFile}!GraphDrawer@{GraphDrawer}}
+\subsubsection{\texorpdfstring{inputFile}{inputFile}}
+{\footnotesize\ttfamily string Graph\+Drawer.\+input\+File}
+
+
+
+This variable can be changed within the Unity G\+UI. Keep in mind, that the extension has to be.\+xml and the extension.\+graphml is not supported. 
+
+\mbox{\Hypertarget{class_graph_drawer_aa5ef4a330d302c0d55a33376a4727edf}\label{class_graph_drawer_aa5ef4a330d302c0d55a33376a4727edf}} 
+\index{GraphDrawer@{GraphDrawer}!LineScale@{LineScale}}
+\index{LineScale@{LineScale}!GraphDrawer@{GraphDrawer}}
+\subsubsection{\texorpdfstring{LineScale}{LineScale}}
+{\footnotesize\ttfamily float Graph\+Drawer.\+Line\+Scale}
+
+
+
+This variable is calculated using the amount of nodes and scales the width of the edges. 
+
+See definition in \mbox{\hyperlink{class_graph_drawer_ad4bde4b9d817629c77bc1e8818e5cd69}{Graph\+Drawer.\+Draw\+Edges}} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/Graph\+Drawer.\+cs\end{DoxyCompactItemize}
