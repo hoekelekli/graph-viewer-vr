@@ -1,8 +1,9 @@
 # graph-viewer-vr
-This Unity App plots graphml files into 3D space to be displayed on Android devices 
-in virtual reality.
+This Unity application plots graphml files into 3D space and is intended to be used on 
+Android in virtual reality.
 
 # How to use the App
+Take a look to the Workflow Demonstration to get started.
 Just import this project in Unity (2019.3.0 or higher) including Standard Assets. To 
 view your own files insert your graphml files into the Assets/Resources directory and
 change the public variable inputFile in GraphDrawer class manually. 
