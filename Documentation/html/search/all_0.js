@@ -1,5 +1,5 @@
 var searchData=
 [
   ['compasshelper',['CompassHelper',['../class_compass_helper.html',1,'']]],
-  ['coordinatescale',['CoordinateScale',['../class_graph_drawer.html#a8e26c2305c588cd202dce84292b7cd14',1,'GraphDrawer']]]
+  ['coordinatescale',['CoordinateScale',['../class_graph_drawer.html#a0a09edfeab5c988ee4ed2e335b0897e7',1,'GraphDrawer']]]
 ];

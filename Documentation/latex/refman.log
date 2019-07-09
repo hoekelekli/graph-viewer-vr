@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.9)  9 JUL 2019 09:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.9)  9 JUL 2019 10:50
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -1103,9 +1103,9 @@ Package pdftex.def Info: class_graph_drawer.pdf  used on input line 6.
 (pdftex.def)             Requested size: 78.16505pt x 56.9055pt.
  [6]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 35.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 35.
+(Font)              scaled to size 6.29996pt on input line 32.
  [7]) (class_node.tex [8]) (class_xml_parser.tex
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 15.
@@ -1117,23 +1117,16 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 l.25 \end{DoxyParams}
                      
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.25 \end{DoxyParams}
-                     
-
 ? x
  
 Here is how much of TeX's memory you used:
- 16523 strings out of 492895
- 243530 string characters out of 3124670
- 342664 words of memory out of 3000000
- 20092 multiletter control sequences out of 15000+200000
+ 16520 strings out of 492895
+ 243413 string characters out of 3124670
+ 342621 words of memory out of 3000000
+ 20091 multiletter control sequences out of 15000+200000
  63628 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,15n,92p,944b,569s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,16n,92p,944b,569s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{class_node_a6529bbce9a0d3a42b5738b7f338ff129} has b
 een referenced but does not exist, replaced by a fixed one
 
@@ -1160,9 +1153,9 @@ MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/ohx/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/ohx/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/ohx/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (10 pages, 121857 bytes).
+Output written on refman.pdf (10 pages, 121153 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,7 +15,6 @@ Open the file in Gephi and choose Force Atlas 3D as Layout on the left panel. Ch
 and run the tool.
 
 ![screenshot](/Images/gephi_1.PNG?raw=true "Gephi Screenshot 1")
-![screenshot](/Images/gephi_1.PNG?raw=true "Gephi Screenshot 1")
 
 It takes a while and may not terminate. Just abort the algorithm after a while. 
 Go to Files -> Export -> Graph file and select GraphML files. Go to options and check the Normalize 
