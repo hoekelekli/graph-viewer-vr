@@ -1,0 +1,48 @@
+\begin{theindex}
+
+  \item {CompassHelper}, \hyperpage{5}
+  \item {CoordinateScale}
+    \subitem {GraphDrawer}, \hyperpage{7}
+
+  \indexspace
+
+  \item {DrawEdges}
+    \subitem {GraphDrawer}, \hyperpage{7}
+  \item {DrawNodes}
+    \subitem {GraphDrawer}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Edge}, \hyperpage{5}
+  \item {edges}
+    \subitem {Graph}, \hyperpage{6}
+
+  \indexspace
+
+  \item {Graph}, \hyperpage{6}
+    \subitem {edges}, \hyperpage{6}
+    \subitem {nodes}, \hyperpage{6}
+  \item {GraphDrawer}, \hyperpage{6}
+    \subitem {CoordinateScale}, \hyperpage{7}
+    \subitem {DrawEdges}, \hyperpage{7}
+    \subitem {DrawNodes}, \hyperpage{7}
+    \subitem {inputFile}, \hyperpage{8}
+    \subitem {LineScale}, \hyperpage{8}
+
+  \indexspace
+
+  \item {inputFile}
+    \subitem {GraphDrawer}, \hyperpage{8}
+
+  \indexspace
+
+  \item {LineScale}
+    \subitem {GraphDrawer}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Node}, \hyperpage{8}
+  \item {nodes}
+    \subitem {Graph}, \hyperpage{6}
+
+\end{theindex}

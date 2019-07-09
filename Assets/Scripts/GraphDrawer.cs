@@ -14,7 +14,6 @@ public class GraphDrawer : MonoBehaviour
     public GameObject ball;
     public GameObject lineGenerator;
     public GameObject nodeText;
-    public GameObject arrowHead;
     public GameObject player;
 
     /// <summary>
@@ -26,7 +25,7 @@ public class GraphDrawer : MonoBehaviour
     /// <summary>
     /// This constant is multiplied with the coordinates of the nodes.
     /// </summary>
-    public static readonly float CoordinateScale = 10f;
+    public float CoordinateScale = 10f;
 
     /// <summary>
     /// This variable is calculated using the amount of nodes and scales the width of

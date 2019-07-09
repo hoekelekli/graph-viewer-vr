@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['edge',['Edge',['../class_edge.html',1,'']]]
+  ['compasshelper',['CompassHelper',['../class_compass_helper.html',1,'']]]
 ];

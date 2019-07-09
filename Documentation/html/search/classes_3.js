@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmlparser',['XmlParser',['../class_xml_parser.html',1,'']]]
+  ['node',['Node',['../class_node.html',1,'']]]
 ];
