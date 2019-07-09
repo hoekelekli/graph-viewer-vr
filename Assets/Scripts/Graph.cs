@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Holds list of nodes and edges.
+/// </summary>
 public class Graph
 {
     /// <summary>

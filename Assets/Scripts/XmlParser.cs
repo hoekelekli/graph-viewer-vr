@@ -8,14 +8,16 @@ using UnityEngine;
 using System.Globalization;
 using UnityEngine.UI;
 
+/// <summary>
+/// Parses the graphml input and constructs a graph object.
+/// </summary>
 public class XmlParser
 {
-    /**
-     * <summary>This method parses the given graphml file to construct a Graph.</summary>
-     * <param name="inputFile">A string directing to the graphml-file. Keep in mind, that the 
-     * extension has to be .xml and the extension .graphml is not supported.</param>
-     * <returns>Graph consisting of List nodes and edges.</returns>
-     */
+    /// <summary>
+    /// This method parses the given graphml file to construct a Graph.
+    /// <param name="inputFile">A string directing to the graphml-file.Keep in mind, that the 
+    /// extension has to be.xml and the extension.graphml is not supported.</param>
+    /// <returns>Graph consisting of List nodes and edges.</returns>
     public static Graph GetParsedGraph(string inputFile)
     {
         List<Edge> edges = new List<Edge>();

@@ -18,7 +18,9 @@ and run the tool.
 
 It takes a while and may not terminate. Just abort the algorithm after a while. 
 Go to Files -> Export -> Graph file and select GraphML files. Go to options and check the Normalize 
-checkbox. Save the GraphMl file in the Assets/Resources directory. 
+checkbox. Save the GraphMl file in the Assets/Resources directory and rename it to <filename>.xml instead of 
+<filename>.graphml. Also manually check if Gephi has exported all 3 axis. Sometimes it exports only 2 axis, for some reason.
+If you are confronting such a problem, just restart Gephi and try exporting the graph again.
 
 ![screenshot](/Images/gephi_2.PNG?raw=true "Gephi Screenshot 2")
 
@@ -46,5 +48,21 @@ in Unity. In the Inspector select "Sprite (2D and UI)" as Texture Type.
 Select the LogoHolder->Logo in the Hirarchy and change the Source Image in the Inspector.
 
 ![screenshot](/Images/unity_4.PNG?raw=true "Unity Screenshot 4")
+
+# Unity Project Settings
+To view your project settings go to "Edit -> Project Settings ...". You can configure different settings such as 
+input management or player settings. 
+For using the application on android in virtual reality it is neccessary to check the "Virtual Reality Supported"
+checkbox under "Player -> XR Settings".
+
+![screenshot](/Images/unity_5.PNG?raw=true "Unity Screenshot 5")
+
+# Useful References
+Keypad of our used controller: https://forum.unity.com/threads/utopia-360-bluetooth-controller-mapping-buttons-to-unity.482773/
+Unity Input Settings: https://docs.unity3d.com/Manual/ConventionalGameInput.html
+Android Debugging: https://bertt.wordpress.com/2018/06/12/how-to-debug-your-unity3d-android-application-in-visual-studio/
+
+
+
 
 

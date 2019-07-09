@@ -2,14 +2,14 @@
 
   \item {CompassHelper}, \hyperpage{5}
   \item {CoordinateScale}
-    \subitem {GraphDrawer}, \hyperpage{7}
+    \subitem {GraphDrawer}, \hyperpage{8}
 
   \indexspace
 
   \item {DrawEdges}
-    \subitem {GraphDrawer}, \hyperpage{7}
+    \subitem {GraphDrawer}, \hyperpage{8}
   \item {DrawNodes}
-    \subitem {GraphDrawer}, \hyperpage{7}
+    \subitem {GraphDrawer}, \hyperpage{8}
 
   \indexspace
 
@@ -22,27 +22,45 @@
   \item {Graph}, \hyperpage{6}
     \subitem {edges}, \hyperpage{6}
     \subitem {nodes}, \hyperpage{6}
-  \item {GraphDrawer}, \hyperpage{6}
-    \subitem {CoordinateScale}, \hyperpage{7}
-    \subitem {DrawEdges}, \hyperpage{7}
-    \subitem {DrawNodes}, \hyperpage{7}
+  \item {GraphDrawer}, \hyperpage{7}
+    \subitem {CoordinateScale}, \hyperpage{8}
+    \subitem {DrawEdges}, \hyperpage{8}
+    \subitem {DrawNodes}, \hyperpage{8}
     \subitem {inputFile}, \hyperpage{8}
     \subitem {LineScale}, \hyperpage{8}
 
   \indexspace
 
+  \item {id}
+    \subitem {Node}, \hyperpage{9}
   \item {inputFile}
     \subitem {GraphDrawer}, \hyperpage{8}
 
   \indexspace
 
+  \item {label}
+    \subitem {Node}, \hyperpage{9}
   \item {LineScale}
     \subitem {GraphDrawer}, \hyperpage{8}
 
   \indexspace
 
-  \item {Node}, \hyperpage{8}
+  \item {Node}, \hyperpage{9}
+    \subitem {id}, \hyperpage{9}
+    \subitem {label}, \hyperpage{9}
+    \subitem {rgb}, \hyperpage{9}
+    \subitem {xyz}, \hyperpage{9}
   \item {nodes}
     \subitem {Graph}, \hyperpage{6}
+
+  \indexspace
+
+  \item {rgb}
+    \subitem {Node}, \hyperpage{9}
+
+  \indexspace
+
+  \item {xyz}
+    \subitem {Node}, \hyperpage{9}
 
 \end{theindex}

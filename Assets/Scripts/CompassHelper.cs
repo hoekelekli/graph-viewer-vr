@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Displays compass below player.
+/// </summary>
 public class CompassHelper : MonoBehaviour
 {
     public GameObject player; 

@@ -8,6 +8,10 @@ using UnityEngine;
 using System.Globalization;
 using UnityEngine.UI;
 
+/// <summary>
+/// Is attached to the GraphViewer component in the hierarchy and manages 
+/// displaying the graph.
+/// </summary>
 public class GraphDrawer : MonoBehaviour
 {
     private Graph graph;
@@ -34,26 +38,26 @@ public class GraphDrawer : MonoBehaviour
     /// See definition in <see cref="GraphDrawer.DrawEdges"/>
     public float LineScale;    
 
-    /**
-     * <summary>Parses the graph before the game starts.</summary>
-     */
+    /// <summary>
+    /// Parses the graph before the game starts.
+    /// </summary>
     void Awake()
     {
         graph = XmlParser.GetParsedGraph(inputFile);
     }
 
-    /**
-     * <summary>Draws nodes and edges when game is starting.</summary>
-     */
+    /// <summary>
+    /// Draws nodes and edges when game is starting.
+    /// </summary>
     void Start()
     {
         DrawNodes();
         DrawEdges();
     }
 
-    /**
-     * <summary>Updates label rotation based on the player position in each frame.</summary>
-     */
+    /// <summary>
+    /// Updates label rotation based on the player position in each frame.
+    /// </summary>
     void Update()
     {
         foreach(Node node in graph.nodes)
@@ -63,9 +67,9 @@ public class GraphDrawer : MonoBehaviour
         }
     }
 
-    /**
-     * <summary>Iterates through all nodes and plots them into 3D world space.</summary>
-     */
+    /// <summary>
+    /// Iterates through all nodes and plots them into 3D world space.
+    /// </summary>
     public void DrawNodes()
     {
         // Iterate through all nodes and draw from prefab.
@@ -111,9 +115,9 @@ public class GraphDrawer : MonoBehaviour
         }
     }
 
-    /**
-     * <summary>Iterates through all edges and connects source and target nodes.</summary>
-     */
+    /// <summary>
+    /// Iterates through all edges and connects source and target nodes.
+    /// </summary>
     public void DrawEdges()
     {
         foreach (Edge edge in graph.edges)
